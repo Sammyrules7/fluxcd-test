@@ -25,6 +25,6 @@ spec:
   selector:
     app.kubernetes.io/name: minecraft
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 9376
+    - protocol: UDP
+      port: 25565
+      targetPort: 25565
