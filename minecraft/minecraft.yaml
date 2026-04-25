@@ -10,8 +10,10 @@ spec:
       ports:
         - containerPort: 25565
       env:
-        - EULA: true
-        - MODRINTH_MODPACK: "BYN9yKrV"
+        - name: EULA
+          value: "true"
+        - name: MODRINTH_MODPACK
+          value: "BYN9yKrV"
 ---
 apiVersion: v1
 kind: Service
